@@ -239,4 +239,29 @@ main{
       }
     }
   }
+
+  .firstFlatA,
+  .secondFlatA,
+  .thirdFlatA,
+  .fourthFlatA,
+  .firstFlatB,
+  .secondFlatB,
+  .thirdFlatB,
+  .fourthFlatB{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .back{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      img{
+        width: 35px;
+      }
+    }
+    .image{
+      height: 500px;
+    }
+  }
 }

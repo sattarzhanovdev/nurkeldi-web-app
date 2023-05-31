@@ -227,3 +227,47 @@ main .flatSecondBlock .left div button {
 main .flatSecondBlock .right img {
   width: 400px;
 }
+main .firstFlatA,
+main .secondFlatA,
+main .thirdFlatA,
+main .fourthFlatA,
+main .firstFlatB,
+main .secondFlatB,
+main .thirdFlatB,
+main .fourthFlatB {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+main .firstFlatA .back,
+main .secondFlatA .back,
+main .thirdFlatA .back,
+main .fourthFlatA .back,
+main .firstFlatB .back,
+main .secondFlatB .back,
+main .thirdFlatB .back,
+main .fourthFlatB .back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main .firstFlatA .back img,
+main .secondFlatA .back img,
+main .thirdFlatA .back img,
+main .fourthFlatA .back img,
+main .firstFlatB .back img,
+main .secondFlatB .back img,
+main .thirdFlatB .back img,
+main .fourthFlatB .back img {
+  width: 35px;
+}
+main .firstFlatA .image,
+main .secondFlatA .image,
+main .thirdFlatA .image,
+main .fourthFlatA .image,
+main .firstFlatB .image,
+main .secondFlatB .image,
+main .thirdFlatB .image,
+main .fourthFlatB .image {
+  height: 500px;
+}

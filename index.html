@@ -54,20 +54,20 @@
         <div class="left">
           <h3>Выберите этаж</h3>
           <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
+            <button onclick="turnOnFirstFloor()">1</button>
+            <button onclick="turnOnSecondFloor()">2</button>
+            <button onclick="turnOnThirdFloor()">3</button>
+            <button onclick="turnOnFourthFloor()">4</button>
+            <button onclick="turnOnFifthFloor()">5</button>
+            <button onclick="turnOnSixthFloor()">6</button>
+            <button onclick="turnOnSeventhFloor()">7</button>
+            <button onclick="turnOnEighthFloor()">8</button>
+            <button onclick="turnOnNinthFloor()">9</button>
+            <button onclick="turnOnTenthFloor()">10</button>
+            <button onclick="turnOnEleventhFloor()">11</button>
+            <button onclick="turnOnTwelvesFloor()">12</button>
+            <button onclick="turnOnThirteenthFloor()">13</button>
+            <button onclick="turnOnFourteenthFloor()">14</button>
           </div>
         </div>
         <div class="right">
@@ -81,20 +81,20 @@
         <div class="left">
           <h3>Выберите этаж</h3>
           <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
+            <button onclick="turnOnFirstFloor()">1</button>
+            <button onclick="turnOnSecondFloor()">2</button>
+            <button onclick="turnOnThirdFloor()">3</button>
+            <button onclick="turnOnFourthFloor()">4</button>
+            <button onclick="turnOnFifthFloor()">5</button>
+            <button onclick="turnOnSixthFloor()">6</button>
+            <button onclick="turnOnSeventhFloor()">7</button>
+            <button onclick="turnOnEighthFloor()">8</button>
+            <button onclick="turnOnNinthFloor()">9</button>
+            <button onclick="turnOnTenthFloor()">10</button>
+            <button onclick="turnOnEleventhFloor()">11</button>
+            <button onclick="turnOnTwelvesFloor()">12</button>
+            <button onclick="turnOnThirteenthFloor()">13</button>
+            <button onclick="turnOnFourteenthFloor()">14</button>
           </div>
         </div>
         <div class="right">
@@ -102,16 +102,16 @@
         </div>
       </div>
       <div class="flatFirstBlock">
-        <div class="back">
+        <div class="back" onclick="backFromFlatsFirst()">
           <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
         </div>
         <div class="left">
-          <h3>Выберите этаж</h3>
+          <h3>Выберите квартиру</h3>
           <div>
-            <button class="first">1</button>
-            <button class="second">2</button>
-            <button class="third">3</button>
-            <button class="fourth">4</button>
+            <button class="first" onclick="turnOnFirstFlat()">1</button>
+            <button class="second" onclick="turnOnSecondFlat()">2</button>
+            <button class="third" onclick="turnOnThirdFlat()">3</button>
+            <button class="fourth" onclick="turnOnFourthFlat()">4</button>
           </div>
         </div>
         <div class="right">
@@ -119,22 +119,81 @@
         </div>
       </div>
       <div class="flatSecondBlock">
-        <div class="back">
+        <div class="back" onclick="backFromFlatsSecond()">
           <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
         </div>
         <div class="left">
-          <h3>Выберите этаж</h3>
+          <h3>Выберите квартиру</h3>
           <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
+            <button class="first" onclick="turnOnFirstFlat()">1</button>
+            <button class="second" onclick="turnOnSecondFlat()">2</button>
+            <button class="third" onclick="turnOnThirdFlat()">3</button>
+            <button class="fourth" onclick="turnOnFourthFlat()">4</button>
           </div>
         </div>
         <div class="right">
           <img src="img/2 BLOCK.webp" alt="">
         </div>
       </div>
+
+
+      <div class="firstFlatA">
+        <div class="back" onclick="backFromMoreA()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/firstA.png" alt="" class="image">
+      </div>
+
+      <div class="secondFlatA">
+        <div class="back" onclick="backFromMoreA()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/secondA.png" alt="" class="image">
+      </div>
+
+      <div class="thirdFlatA">
+        <div class="back" onclick="backFromMoreA()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/thirdA.png" alt="" class="image">
+      </div>
+
+      <div class="fourthFlatA">
+        <div class="back" onclick="backFromMoreA()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/fourthA.png" alt="" class="image">
+      </div>
+
+
+      <div class="firstFlatB">
+        <div class="back" onclick="backFromMoreB()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/firstB.png" alt="" class="image">
+      </div>
+
+      <div class="secondFlatB">
+        <div class="back" onclick="backFromMoreB()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/secondB.png" alt="" class="image">
+      </div>
+
+      <div class="thirdFlatB">
+        <div class="back" onclick="backFromMoreB()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/thirdB.png" alt="" class="image">
+      </div>
+
+      <div class="fourthFlatB">
+        <div class="back" onclick="backFromMoreB()">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_68752.png" alt="back">
+        </div>
+        <img src="/img/fourthB.png" alt="" class="image">
+      </div>
+
     </main>
 
 
