@@ -34,25 +34,21 @@ let bluetoothCharacteristic;
 let lastFloor = 1;
 let lastBlock;
 
-async function connectToDevice() {
-  try {
-    let result = navigator.bluetooth.requestDevice({acceptAllDevices: true}).then(res => {
-      console.log(res.gatt)
-      uuid = res.gatt.device.id
-      isConnected = res.gatt.connected
-    })
-  
-    device = result;
+function connectToDevice() {
+  let result = navigator.bluetooth.requestDevice({acceptAllDevices: true}).then(res => {
+    console.log(res.gatt)
+    uuid = res.gatt.device.id
+    isConnected = res.gatt.connected
+  })
 
-    const service = await server.getPrimaryService(uuid);
+  device = result;
 
-    bluetoothCharacteristic = await service.getCharacteristic(uuid);
+  const service = server.getPrimaryService(uuid);
 
-  
-    isConnected ? $connectBtn.setAttribute('style', 'display: none') : $connectBtn.setAttribute('style', 'display: block')
-  }catch(e){
-    alert('Попробуйте еще раз!')
-  }
+  bluetoothCharacteristic = service.getCharacteristic(uuid);
+
+
+  isConnected ? $connectBtn.setAttribute('style', 'display: none') : $connectBtn.setAttribute('style', 'display: block')
 }
 
 function turnOnAll() {
