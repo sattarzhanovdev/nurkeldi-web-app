@@ -2,10 +2,34 @@
 <html>
   <head>
     <title>Bluetooth Control App</title>
+    <link rel="stylesheet" href="dist/style.css">
   </head>
   <body>
-    <h1>Bluetooth Control App</h1>
-    <button onclick="connectToDevice()">Connect to Bluetooth Device</button>
+    <header>
+      <button 
+        onclick="connectToDevice()" 
+        class="connectBtn"
+      > 
+        Подключиться
+      </button>
+    </header>
+
+    <main>
+      <div class="firstPage">
+        <div class="left">
+          <img src="/img/logo.png" alt="logo">
+          <div>
+            <button>Включить дом</button>
+            <button>Включить демо режим</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="/img/фото.png" alt="">
+        </div>
+      </div>
+    </main>
+
+
     <script src="/script.js"></script>
   </body>
 </html>
