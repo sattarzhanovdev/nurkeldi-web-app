@@ -15,8 +15,9 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   .firstPage{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     .left{
@@ -45,6 +46,44 @@ main{
       }
     }
     .right{
+      img{
+        width: 400px;
+      }
+    }
+  }
+  .demoPage{
+    display: none;
+    .back{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      img{
+        width: 35px;
+      }
+    }
+    button{
+      width: 500px;
+      height: 50px;
+      background: orange;
+      color: white;
+      font-weight: bold;
+      border: 0;
+    }
+  }
+  .blocks{
+    display: flex;
+    align-items: center;
+    .back{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      img{
+        width: 35px;
+      }
+    }
+    button{
+      background: none;
+      border: 0 ;
       img{
         width: 400px;
       }

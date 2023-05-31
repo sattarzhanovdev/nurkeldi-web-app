@@ -13,9 +13,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 main .firstPage {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -45,5 +46,43 @@ main .firstPage .left div button {
   font-weight: bold;
 }
 main .firstPage .right img {
+  width: 400px;
+}
+main .demoPage {
+  display: none;
+}
+main .demoPage .back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main .demoPage .back img {
+  width: 35px;
+}
+main .demoPage button {
+  width: 500px;
+  height: 50px;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+main .blocks {
+  display: flex;
+  align-items: center;
+}
+main .blocks .back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+main .blocks .back img {
+  width: 35px;
+}
+main .blocks button {
+  background: none;
+  border: 0;
+}
+main .blocks button img {
   width: 400px;
 }

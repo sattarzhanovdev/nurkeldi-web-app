@@ -1,4 +1,7 @@
 const $connectBtn = document.querySelector('.connectBtn')
+const $first = document.querySelector('.firstPage')
+const $demo = document.querySelector('.demoPage')
+const $blocks = document.querySelector('.blocks')
 
 let device;
 let uuid;
@@ -28,6 +31,8 @@ async function connectToDevice() {
 }
 
 function turnOnAll() {
+  $first.setAttribute('style', 'display: none')
+  $blocks.setAttribute('style', 'display: flex')
   if (bluetoothCharacteristic && bluetoothCharacteristic.writeValue) {
     const text = 'v'
     const encoder = new TextEncoder();
@@ -39,13 +44,37 @@ function turnOnAll() {
 }
 
 function turnOnDemo() {
+  $first.setAttribute('style', 'display: none')
+  $demo.setAttribute('style', 'display: flex')
   if (bluetoothCharacteristic && bluetoothCharacteristic.writeValue) {
     const text = 'D'
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    bluetoothCharacteristic.writeValue(data)
+    
+  } else {
+    console.error('Characteristic not available for writing.');
+  }
+}
+
+function turnOffDemo() {
+  if (bluetoothCharacteristic && bluetoothCharacteristic.writeValue) {
+    const text = '*'
     const encoder = new TextEncoder();
     const data = encoder.encode(text);
     bluetoothCharacteristic.writeValue(data)
   } else {
     console.error('Characteristic not available for writing.');
   }
+}
+
+function backFromDemo(){
+  $first.setAttribute('style', 'display: flex')
+  $demo.setAttribute('style', 'display: none')
+}
+
+function backFromBlock(){
+  $first.setAttribute('style', 'display: flex')
+  $blocks.setAttribute('style', 'display: none')
 }
 
