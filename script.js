@@ -36,10 +36,13 @@ let lastBlock;
 
 function connectToDevice() {
   let result = navigator.bluetooth.requestDevice({acceptAllDevices: true}).then(res => {
+    result.gatt.connect()
     console.log(res.gatt)
     uuid = res.gatt.device.id
     isConnected = res.gatt.connected
   })
+
+
 
   device = result;
 
