@@ -28,21 +28,24 @@ async function connectToDevice() {
 }
 
 function turnOnAll() {
-  if (characteristic && characteristic.writeValue) {
+  if (bluetoothCharacteristic && bluetoothCharacteristic.writeValue) {
+    const text = 'v'
     const encoder = new TextEncoder();
     const data = encoder.encode(text);
-    characteristic.writeValue(data)
-      .then(() => {
-        console.log('Text data sent: ' + text);
-      })
-      .catch((error) => {
-        console.error('Error sending text data:', error);
-      });
+    bluetoothCharacteristic.writeValue(data)
   } else {
     console.error('Characteristic not available for writing.');
   }
 }
 
+function turnOnDemo() {
+  if (bluetoothCharacteristic && bluetoothCharacteristic.writeValue) {
+    const text = 'D'
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    bluetoothCharacteristic.writeValue(data)
+  } else {
+    console.error('Characteristic not available for writing.');
+  }
+}
 
-
-console.log(uuid);
